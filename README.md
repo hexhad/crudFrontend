@@ -8,7 +8,7 @@
 #### 3. http://localhost:3000/
 
 # Assumtions
-#### 1. one task must have one unique id
+#### 1. one task must have one unique id ; cannot create deleted task id again
 #### 2. possible to change task description only
 #### 3. ✔️ icon can change state of the task and there will be 2 status called DONE and ON_GOING
 #### 4. Possible to add tasks using Text box
