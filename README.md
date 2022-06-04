@@ -5,6 +5,7 @@
 # Start
 #### 1. yarn install
 #### 2. yarn start 
+#### 3. http://localhost:3000/
 
 # Assumtions
 #### 1. one task must have one unique id
