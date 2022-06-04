@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+}
+
+$poppins: "poppins", sans-serif;
+
+.btn {
+  border: none;
+  box-shadow: none;
+}
+
+.closed {
+  text-decoration: line-through !important;
+}
+
+.container {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff5a8;
+
+  .middle-card {
+    width: 80vw !important;
+    max-width: 600px !important;
+    height: 80vh !important;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-clip: border-box;
+    // border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 2px;
+
+    .title-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5vh;
+      .title {
+        margin: 1vh auto;
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 25px;
+      }
+    }
+    .add-task-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      form {
+        .add-item-input {
+          height: 40px;
+          padding-left: 10px;
+          padding-right: 10px;
+          margin: 10px;
+          font-family: $poppins;
+          font-weight: 400;
+        }
+
+        .add-item-btn {
+          height: 40px;
+          padding-left: 30px;
+          padding-right: 30px;
+          border: none;
+          font-family: $poppins;
+          font-weight: 400;
+        }
+      }
+    }
+    .task-list-wrapper {
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+      height: 52vh !important;
+      overflow: scroll;
+      margin: 1vh 5vw !important;
+   
+      .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        margin: 10px auto;
+
+        .task {
+          width: 10%;
+          font-family: $poppins;
+          font-weight: 500;
+        }
+        .details {
+          width: 55%;
+          font-family: $poppins;
+          font-weight: 500;
+        }
+        .status {
+          width: 35%;
+          display: flex;
+          justify-content: right;
+        }
+      }
+    }
+    .task-list-wrapper::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+  }
+}
